@@ -1,0 +1,55 @@
+
+$back-color:#fff000;
+$text-color:#ff0000;
+@mixin effect($property,$duration,$function){
+  transition: $property $duration $function;
+  -moz-transition:$property $duration $function;
+  -o-transition: $property $duration $function;
+  -webkit-transition: $property $duration $function;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+
+  .container{
+    .row{
+      .col-4{
+        margin-top: 40px;
+
+        .card {
+          //background-color: $back-color;
+
+          &:hover {
+            @include effect(all, 1.5s, linear );
+            box-shadow: 0 0 10px 5px green;
+            transition: all 1.5s linear;
+            //transform: scale(1.2) rotate(30deg);
+
+            .card-header {
+              h3 {
+                color: #000;
+                @include effect(all, 2.2s, linear );
+
+
+              }
+            }
+
+            .card-body {
+              p {
+                color: $text-color;
+              }
+            }
+          }
+
+          .card-header {
+            h3 {
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

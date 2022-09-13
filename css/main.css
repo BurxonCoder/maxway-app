@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+  body .container .row .col-4 {
+    margin-top: 40px; }
+    body .container .row .col-4 .card:hover {
+      transition: all 1.5s linear;
+      -moz-transition: all 1.5s linear;
+      -o-transition: all 1.5s linear;
+      -webkit-transition: all 1.5s linear;
+      box-shadow: 0 0 10px 5px green;
+      transition: all 1.5s linear; }
+      body .container .row .col-4 .card:hover .card-header h3 {
+        color: #000;
+        transition: all 2.2s linear;
+        -moz-transition: all 2.2s linear;
+        -o-transition: all 2.2s linear;
+        -webkit-transition: all 2.2s linear; }
+      body .container .row .col-4 .card:hover .card-body p {
+        color: #ff0000; }
+    body .container .row .col-4 .card .card-header h3 {
+      color: #ff0000; }
+
+/*# sourceMappingURL=main.css.map */
